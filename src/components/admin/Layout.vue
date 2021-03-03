@@ -3,31 +3,30 @@
     <div class="row">
       <div class="col-md-1 side-bar fixed">
         <div class="logo mt-5">Logo Here</div>
-        <Nav/>
+        <Nav />
       </div>
       <div class="col-md-11 main">
-          <top-nav/>
-          <div class="row">
-              <div class="col-md-8 content">
-                  dskdjskdjskdjskd
-              </div>
-              <div class="col-md-4 right-sidebar">
-                  jskdjsk
-              </div>
+        <top-nav />
+        <div class="row">
+          <div class="col-md-12 content">
+            <classroom />
           </div>
-           
+          <!-- <div class="col-md-4 right-sidebar">jskdjsk</div> -->
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Classroom from "./classroom.vue";
 import Nav from "./Nav/nav.vue";
-import TopNav from './Nav/topNav.vue';
+import TopNav from "./Nav/topNav.vue";
 export default {
   components: {
     Nav,
     TopNav,
+    Classroom,
   },
 };
 </script>
@@ -41,12 +40,12 @@ export default {
   border-bottom-right-radius: 50px;
 }
 
-.content{
-    height: 87vh;
+.content {
+  height: 87vh;
 }
 
-.right-sidebar{
-    background: yellow;
-    height: 87vh;
+.right-sidebar {
+  background: yellow;
+  height: 87vh;
 }
 </style>
